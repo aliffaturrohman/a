@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+
+    <style>
+        /* Gaya awal sebelum hovering */
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        nav {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar-nav .nav-link {
+            transition: color 0.5s;
+            color: rgba(0, 0, 0, 0.375) !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+        }
+
+
+        .navbar-nav .nav-item {
+            transition: background-color 0.5s, color 0.5s, border-radius 0.5s, border 0.5s;
+            border: 2px solid transparent;
+            /* Tambahkan border dalam gaya awal */
+            border-radius: 5px;
+        }
+
+        .navbar-nav .nav-item:hover {
+            background-color: #007bff;
+            /* Ubah warna latar belakang pada hover */
+            border-radius: 15px;
+            border: 2px solid transparent;
+            /* Mengubah warna border pada hover */
+        }
+
+        .img {
+            box-shadow: -8px 4px 50px 0px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+
+<body class="container">
+    <nav class="navbar navbar-expand-lg navbar-light border">
+        <img class="m-0 p-0" src="Assets/Logo.png" alt="Logo" width="150" height="auto">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-3 px-3">
+                    <a class="nav-link" href="#clickThis">Home</a>
+                </li>
+                <li class="nav-item mx-3 px-3">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item mx-3 px-3">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item mx-3 px-3">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item mx-3 px-3">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row border pt-xl-5 pr-0 mr-0">
+        <div class="col-6">
+            <h3 class="display-4">Hello mate&#128075;</h3>
+            <h1 class="display-1">I'm Alif Faturrohman</h1>
+            <h1 class="display-2">a <span class="text-primary">Web Developer</span></h1>
+            <button class="btn btn-primary">Get to Know</button>
+            <button class="btn btn-secondary">Download CV</button>
+        </div>
+        <div class="col-6 mr-0 pr-0">
+            <img class="img" src="Assets/profilePhoto.png" alt="profile photo" height="600px">
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
